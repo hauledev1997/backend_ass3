@@ -1,0 +1,5 @@
+{
+  "env": {
+    "MONGODB_URI": "mongodb+srv://user1:LxYOWLwUpWpJSiW8@cluster0.fmyicip.mongodb.net/shop"
+  }
+}
