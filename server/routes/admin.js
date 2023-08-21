@@ -21,12 +21,12 @@ router.get('/clients', adminController.getClients);
 
 router.get('/orders', adminController.getOrders);
 
-router.post('/new-product', adminController.postNewProduct);
+router.post('/new-product', isAuth, adminController.postNewProduct);
 
-router.post('/delete-product', adminController.postDeleteProduct);
+router.post('/delete-product', isAuth, adminController.postDeleteProduct);
 
-router.get('/edit-product/:prodId', adminController.getEditProduct);
+router.get('/edit-product/:prodId', isAuth, adminController.getEditProduct);
 
-router.post('/edit-product/:prodId', adminController.postEditProduct);
+router.post('/edit-product/:prodId', isAuth, adminController.postEditProduct);
 
 module.exports = router;
